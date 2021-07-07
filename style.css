@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Tourney:ital,wght@0,400;0,700;1,400&display=swap');
+
+@keyframes balançarL{
+    0%{transform: rotate(0deg);}
+    15%{transform: rotate(-35deg);}
+    30%{transform: rotate(5deg);}
+    45%{transform: rotate(-30deg);}
+    60%{transform: rotate(10deg);}
+    75%{transform: rotate(-30deg);}
+    90%{transform: rotate(0deg);}
+}
+
+@keyframes balançarR{
+    0%{transform: rotate(0deg);}
+    15%{transform: rotate(35deg);}
+    30%{transform: rotate(-5deg);}
+    45%{transform: rotate(30deg);}
+    60%{transform: rotate(-10deg);}
+    75%{transform: rotate(30deg);}
+    90%{transform: rotate(0deg);}
+}
+
+@keyframes fundoP{
+    0%{background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(152,0,207,1) 100%);}
+    25%{background: linear-gradient(135deg, rgba(255,255,255,1) 25%, rgba(152,0,207,1) 100%);}
+    50%{background: linear-gradient(135deg, rgba(255,255,255,1) 50%, rgba(152,0,207,1) 100%);}
+    75%{background: linear-gradient(135deg, rgba(255,255,255,1) 75%, rgba(152,0,207,1) 100%);}
+    100%{background: linear-gradient(135deg, rgba(255,255,255,1) 100%, rgba(152,0,207,1) 100%); color: rgba(152,0,207,1); border-color: rgba(152,0,207,1);}
+
+}
+
+@keyframes fundoO{
+    0%{background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(160,0,167,1) 50%);}
+    50%{background: radial-gradient(circle, rgba(0,0,0,1) 25%, rgba(160,0,167,1) 50%);}
+    100%{background: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(160,0,167,1) 60%);}
+    75%{background: radial-gradient(circle, rgba(0,0,0,1) 75%, rgba(160,0,167,1) 80%);}
+    100%{background: radial-gradient(circle, rgba(0,0,0,1) 100%, rgba(160,0,167,1) 100%);}
+}
+
+body{
+    background: url(img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#wrapper{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    background: rgba( 255, 255, 255, 0.40 );
+    backdrop-filter: blur(20px);
+    opacity: 0.9;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(152,0,207,1);
+}
+
+h1{
+    background: #9800CF;
+    background: -webkit-radial-gradient(circle farthest-side at center center, #9800CF 0%, #000 100%);
+    background: -moz-radial-gradient(circle farthest-side at center center, #9800CF 0%, #000 100%);
+    background: radial-gradient(circle farthest-side at center center, #9800CF 0%, #000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 62px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-family: Tourney;
+}
+
+header p{
+    font-size: 18px;
+    margin-left: 47px;
+    margin-top: -5px;
+    font-style: italic;
+    background: #9800CF;
+    background: -webkit-radial-gradient(circle farthest-side at center center, #000 0%, #9800CF 100%);
+    background: -moz-radial-gradient(circle farthest-side at center center, #000 0%, #9800CF 100%);
+    background: radial-gradient(circle farthest-side at center center, #000 0%, #9800CF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Tourney;
+}
+
+#des{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    height: 50px;
+    text-align: center;
+    margin-left: 90px;
+    margin-top: -20px;
+}
+
+#des p, .error{
+    font-family: Tourney;
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+    width: 40%;
+    height: 15px;
+}
+
+#j1{
+    margin: 0;
+    margin-left: 15px;
+}
+
+#j2{
+    margin-left: 30px;
+    padding-left: 80px;
+    margin: 0;
+}
+
+#imgs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    width: 75%;
+    text-align: center;
+}
+
+#vs p{
+    background: #9800CF;
+    background: -webkit-linear-gradient(to left, #9800CF 0%, #fff 50%, #9800CF 100%);
+    background: -moz-linear-gradient(to left, #9800CF 0%, #fff 50%, #9800CF 100%);
+    background: linear-gradient(to left, #9800CF 0%, #fff 50%, #9800CF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Alfa Slab One;
+    font-size: 60px;
+    text-shadow: 0 0 0.3px rgba(0, 0, 0, 0.05);
+    margin-bottom: 0;
+    margin-top: -140px;
+}
+
+#res{
+    margin: 10px auto;
+    height: 45px;
+    font-size: 36px;
+    width: 100%;
+    font-family: Alfa Slab One;
+    background: #9800CF;
+    background: -webkit-radial-gradient(circle farthest-side at center center, #000 0%, #9800CF 100%);
+    background: -moz-radial-gradient(circle farthest-side at center center, #000 0%, #9800CF 100%);
+    background: radial-gradient(circle farthest-side at center center, #000 0%, #9800CF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#handL img:first-child, #handR img:first-child{
+    padding: 20px;
+    max-width: 150px;
+    height: auto;
+}
+
+#handL.L, #handR.R{
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.43, 0.24);
+}
+
+#handL.L{
+    animation-name: balançarL;
+}
+
+#handR.R{
+    animation-name: balançarR;
+}
+
+#btn{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#btn button{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.548);
+    border: none;
+    background: #fff;
+    color: rgb(141, 0, 197);;
+    cursor: pointer;
+    font-family: Tourney;
+    margin-top: 10px;
+}
+
+#btn button:hover{   
+    animation-name: fundoO;
+    animation-duration: .2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#btn button:not(:last-child){
+    margin-right: 40px;
+}
+
+#final{
+    margin-top: 20px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#final button{
+    padding: 15px 20px;
+    border: none;
+    background: #9800CF;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    font-family: Tourney;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.548);
+    border: 8px double #fff;
+}
+
+#final button:hover{
+    animation-name: fundoP;
+    animation-duration: .3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+div .error{
+    width: 100%;
+    padding-left: 30px;
+}
+
+#btn div .click{
+    background: #000;
+}
