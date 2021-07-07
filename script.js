@@ -61,11 +61,11 @@ function escolha(num, p){
         break;
     
         case 2:
-            p == 'Computador' ? (j2.innerHTML = `Computador Escolheu Papel!`, R.innerHTML = '<img src="img/papelR.png">') : (j1.innerHTML = `Você Escolheu Papel!`, L.innerHTML = '<img src="img/papel.png">');
+            p == 'Computador' ? (j2.innerHTML = `Computador Escolheu Papel!`, R.innerHTML = '<img src="img/papelR.webp">') : (j1.innerHTML = `Você Escolheu Papel!`, L.innerHTML = '<img src="img/papel.webp">');
         break;
     
         case 3:
-            p == 'Computador' ? (j2.innerHTML = `Computador Escolheu Tesoura!`, R.innerHTML = '<img src="img/tesouraR.png">') : (j1.innerHTML = `Você Escolheu Tesoura!`, L.innerHTML = '<img src="img/tesoura.png">');
+            p == 'Computador' ? (j2.innerHTML = `Computador Escolheu Tesoura!`, R.innerHTML = '<img src="img/tesouraR.webp">') : (j1.innerHTML = `Você Escolheu Tesoura!`, L.innerHTML = '<img src="img/tesoura.webp">');
         break;
                     
     };
@@ -95,8 +95,8 @@ function again(){
         j1.innerHTML = '';
         j2.innerHTML = '';
         res.innerHTML = 'ESCOLHA';
-        L.innerHTML = '<img src="img/pedra.png">';
-        R.innerHTML = '<img src="img/pedraR.png">';
+        L.innerHTML = '<img src="img/pedra.webp">';
+        R.innerHTML = '<img src="img/pedraR.webp">';
         previousButton.classList.remove('click');
     }else{
         play.classList.add('again');
